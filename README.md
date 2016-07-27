@@ -1,26 +1,25 @@
 # MarqueeTextXamarin
 
-Objective-C Version : https://github.com/cbpowell/MarqueeLabel/
+Clone for Xamarin.iOS : https://github.com/facebook/Shimmer
 
 ## Example
 
-	MarqueeLabel myLbl = new MarqueeLabel() 
-	  { 
-			Frame = new CoreGraphics.CGRect((UIScreen.MainScreen.Bounds.Width/2)-100,100, 200, 30),
-			MarqueeType = MarqueeType.MLContinuous,
-			ScrollDuration = 15f,
-			AnimationCurve = UIViewAnimationOptions.CurveEaseInOut,
-			FadeLength = 10f,
-			LeadingBuffer = 30f,
-			TrailingBuffer = 20f,
-			Rate = 30f,
-			TextAlignment = UITextAlignment.Center,
-			Text = "Continuous Scrolling Marquee Text ...."
-		};
+	FBShimmeringView shimmeringView = new FBShimmeringView() 
+	{ 
+		Frame = new CoreGraphics.CGRect(0, 100, UIScreen.MainScreen.Bounds.Width, 200),
+		BackgroundColor = UIColor.Blue
+	};
+	View.Add(shimmeringView);
 
-	myLbl.TapToScroll = true;
-	myLbl.UserInteractionEnabled = true;
-	View.Add (myLbl);
+	UILabel lbl = new UILabel() {
+		Frame = new CoreGraphics.CGRect(0, 0, UIScreen.MainScreen.Bounds.Width, 200),
+		Text = "Shimmering Text",
+		Font = UIFont.BoldSystemFontOfSize(40),
+		TextColor = UIColor.White,
+		TextAlignment = UITextAlignment.Center
+	};
+	shimmeringView.ContentView = lbl;
+	shimmeringView.Shimmering = true;
 
 
 ## License
