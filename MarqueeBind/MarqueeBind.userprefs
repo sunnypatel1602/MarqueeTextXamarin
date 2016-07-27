@@ -1,0 +1,17 @@
+﻿<Properties StartupItem="MarqueeUse/MarqueeUse.csproj">
+  <MonoDevelop.Ide.ItemProperties.MarqueeUse PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.1FF1CEA1-A064-46AA-B798-17F58DF765D5" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MarqueeUse/Info.plist">
+    <Files>
+      <File FileName="MarqueeBind/ApiDefinition.cs" Line="9" Column="9" />
+      <File FileName="MarqueeBind/StructsAndEnums.cs" Line="5" Column="2" />
+      <File FileName="MarqueeUse/MarqueeUseViewController.cs" Line="49" Column="48" />
+      <File FileName="MarqueeUse/Info.plist" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.MarqueeBind PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>
